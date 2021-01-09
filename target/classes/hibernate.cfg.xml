@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://localhost:3306/sky_scanner?serverTimezone=UTC</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/chaykovskiy_db?serverTimezone=UTC</property>
 
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.username">root</property>
@@ -14,10 +14,10 @@
         <!--        <property name="hibernate.current_session_context_class">thread</property>-->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-        <mapping class="ua.lviv.iot.model.Airline"/>
-        <mapping class="ua.lviv.iot.model.Airport"/>
-        <mapping class="ua.lviv.iot.model.Flight"/>
-        <mapping class="ua.lviv.iot.model.Ticket"/>
+        <mapping class="ua.lviv.iot.model.Information"/>
+        <mapping class="ua.lviv.iot.model.Sing"/>
+        <mapping class="ua.lviv.iot.model.User"/>
+        <mapping class="ua.lviv.iot.model.Performer"/>
 
     </session-factory>
 </hibernate-configuration>
